@@ -1,8 +1,8 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {Modal as Component} from '.';
+import {ModalAlert as Component} from '.';
 
 const meta: Meta<typeof Text> = {
-  title: '7. Fullscreen/Modal',
+  title: '7. Fullscreen/ModalAlert',
   component: Component,
   tags: ['autodocs'],
   argTypes: {},

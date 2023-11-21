@@ -1,5 +1,7 @@
-const load = require('load-script');
 import {until} from 'thingies/es6/until';
+
+// eslint-disable-next-line
+const load = require('load-script');
 
 /**
  * Loads `.js` script.

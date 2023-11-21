@@ -19,13 +19,13 @@ export const AlertProvider: React.FC<{children: React.ReactNode}> = ({children})
     const alert: Alert = (msg, {showCloseButton, ...props} = {}) => {
       const id = counter++;
       const onClose = () => {
-        setAlerts(alerts => alerts.filter(item => item.id !== id));
+        setAlerts((alerts) => alerts.filter((item) => item.id !== id));
       };
       const element = (
         <ModalAlert
           {...props}
           key={id}
-          onOk={event => {
+          onOk={(event) => {
             onClose();
             if (props.onOk) props.onOk(event);
           }}
@@ -36,7 +36,7 @@ export const AlertProvider: React.FC<{children: React.ReactNode}> = ({children})
           {msg}
         </ModalAlert>
       );
-      setAlerts(alerts => [...alerts, {id, element}]);
+      setAlerts((alerts) => [...alerts, {id, element}]);
     };
     return {alert};
   }, []);

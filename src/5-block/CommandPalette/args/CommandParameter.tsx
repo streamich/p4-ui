@@ -11,7 +11,7 @@ export interface Props {
 export const CommandParameter: React.FC<Props> = ({label, value, active}) => {
   const theme = useTheme();
 
-  const quote = typeof value === 'string' ? <span style={{color: theme.color.sem.positive[1]}}>"</span> : null;
+  const quote = typeof value === 'string' ? <span style={{color: theme.color.sem.positive[1]}}>{'"'}</span> : null;
   const valueFormatted = <span style={{color: theme.g(0)}}>{String(value)}</span>;
   const equal = <span style={{color: theme.g(0.5)}}>=</span>;
   const labelFormatted = <span style={{color: active ? theme.color.sem.negative[1] : theme.g(0.5)}}>{label}</span>;

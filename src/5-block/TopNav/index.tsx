@@ -14,7 +14,7 @@ const blockClass = rule({
   pd: '0 32px',
   z: ZINDEX.TOP_NAV,
   bdfl: 'saturate(170%) blur(14px)',
-  bdb: `1px solid transparent`,
+  bdb: '1px solid transparent',
   '-webkit-app-region': 'drag', // Drag for Electron app.
   '@media only screen and (max-width: 600px)': {
     pad: '0px 16px',
@@ -50,13 +50,10 @@ const showBorder$ = fromEvent(window, 'scroll').pipe(
   distinctUntilChanged(),
 );
 
-export interface TopNavProps extends React.HTMLAttributes<any> {
-  open?: boolean;
-  border?: boolean;
-}
+export interface TopNavProps extends React.HTMLAttributes<any> {}
 
 export const TopNav: React.FC<TopNavProps> = (props) => {
-  const {children, open, border, ...rest} = props;
+  const {children, ...rest} = props;
   const {width} = useWindowSize();
   const showBorder = useObservable(showBorder$, false);
   const dynamicBlockClass = useBlockClass();

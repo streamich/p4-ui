@@ -30,5 +30,6 @@ module.exports = {
     indent: 'off',
     'react/no-children-prop': 'off',
     'react/prop-types': 'off',
+    'no-extra-boolean-cast': 'off',
   },
 };

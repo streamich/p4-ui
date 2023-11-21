@@ -14,7 +14,7 @@ const className = rule({
   bxz: 'border-box',
   fz: '14px',
   ov: 'hidden',
-  animation: `fadeInScaleIn .15s`,
+  animation: 'fadeInScaleIn .15s',
   overflowY: 'auto',
 });
 

@@ -23,5 +23,9 @@ export const Sizer: React.FC<Props> = ({page, children}) => {
     style.maxWidth = `${SIZE.PAGE_WIDTH}px`;
   }
 
-  return <div className={blockClass} style={style}>{children}</div>;
+  return (
+    <div className={blockClass} style={style}>
+      {children}
+    </div>
+  );
 };

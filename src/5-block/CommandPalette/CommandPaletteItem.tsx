@@ -12,7 +12,7 @@ const blockClass = rule({
   d: 'flex',
   w: 'auto',
   alignItems: 'center',
-  bd: `1px solid transparent`,
+  bd: '1px solid transparent',
   out: 0,
   bg: 'none',
   mar: '0 8px',

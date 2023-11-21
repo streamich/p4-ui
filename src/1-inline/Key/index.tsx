@@ -13,7 +13,7 @@ const keyClass = rule({
   lh: '1em',
   fz: '.7em',
   ws: 'nowrap',
-  bxsh: `0 0 .125em rgba(0,0,0,.5),0 .065em .19em rgba(0,0,0,.5),.065em 0 .125em rgba(0,0,0,.2)`,
+  bxsh: '0 0 .125em rgba(0,0,0,.5),0 .065em .19em rgba(0,0,0,.5),.065em 0 .125em rgba(0,0,0,.2)',
   col: '#fff',
 });
 

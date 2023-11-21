@@ -35,11 +35,11 @@ export const Highlight: React.FC<Props> = ({text, query}) => {
     if (highlighted.length === 1 && typeof highlighted[0] === 'string')
       highlighted = highlightFuzzy(text, query.join(''));
     else highlighted = normalize(highlighted);
-    return highlighted.map((part) =>
+    return highlighted.map((part, i) =>
       typeof part === 'string' ? (
         preserveSpaces(part)
       ) : (
-        <span className={highlightClass}>{preserveSpaces(part[0])}</span>
+        <span key={i} className={highlightClass}>{preserveSpaces(part[0])}</span>
       ),
     );
   }, [text, query]);

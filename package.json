@@ -19,7 +19,7 @@
     "lint:fix": "yarn eslint --fix",
     "eslint": "eslint src",
     "clean": "rimraf dist lib es6 es2019 es2020 esm typedocs",
-    "build": "tsc --project tsconfig.json",
+    "build": "tsc --project tsconfig.build.json",
     "jest": "jest",
     "test": "yarn jest --maxWorkers 7",
     "test:all": "yarn lint && yarn test",

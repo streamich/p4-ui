@@ -1,6 +1,9 @@
 {
-  "extends": "./tsconfig",
-  "compilerOptions": {},
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "./"
+  },
   "exclude": [
     "src/demo",
     "src/__tests__",
@@ -11,7 +14,7 @@
     "src/**/__mocha__/**/*.*",
     "src/**/__tap__/**/*.*",
     "src/**/__tape__/**/*.*",
-    "*.test.ts",
-    "*.spec.ts"
+    "src/**/*.stories.ts",
+    "src/**/*.stories.tsx"
   ],
 }

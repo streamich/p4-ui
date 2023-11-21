@@ -18,6 +18,7 @@
     "noEmitOnError": true,
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,
+    "noEmitHelpers": true,
     "noImplicitReturns": true,
     "declaration": true,
     "downlevelIteration": true,

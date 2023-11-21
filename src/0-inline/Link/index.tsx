@@ -14,9 +14,9 @@ export interface LinkProps extends React.AllHTMLAttributes<any> {
 }
 
 export const Link: React.FC<LinkProps> = React.forwardRef<any, LinkProps>((props, ref) => {
-  /* tslint:disable */
+  /* eslint-disable */
   let {replace, state, to, a, component = a ? 'a' : 'button', onClick: originalClick = noop, target, ...rest} = props;
-  /* tslint:enable */
+  /* eslint-disable */
 
   const go = React.useContext(context);
 

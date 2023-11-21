@@ -4110,6 +4110,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/codemirror@npm:^0.0.76":
+  version: 0.0.76
+  resolution: "@types/codemirror@npm:0.0.76"
+  dependencies:
+    "@types/tern": "npm:*"
+  checksum: 26c9c9f1febb1ad9e1abb87defd4316f0d957a82645b3b6901ba8e575a2d3b41ada644c2549c8bee0654cac700cab0256a06c1522c9a697b6db9999d32039fa3
+  languageName: node
+  linkType: hard
+
 "@types/connect@npm:*":
   version: 3.4.38
   resolution: "@types/connect@npm:3.4.38"
@@ -4466,6 +4475,15 @@ __metadata:
   version: 2.0.3
   resolution: "@types/stack-utils@npm:2.0.3"
   checksum: 1f4658385ae936330581bcb8aa3a066df03867d90281cdf89cc356d404bd6579be0f11902304e1f775d92df22c6dd761d4451c804b0a4fba973e06211e9bd77c
+  languageName: node
+  linkType: hard
+
+"@types/tern@npm:*":
+  version: 0.23.8
+  resolution: "@types/tern@npm:0.23.8"
+  dependencies:
+    "@types/estree": "npm:*"
+  checksum: 5d4663171252b21057fa5fe75bd87b0af5c562bcf4dd03cc1876a3c69ed3b6ba520c5794c60309eee06b8bee83424dcaafa2054f2fb1758faaf57ecbd82579b2
   languageName: node
   linkType: hard
 
@@ -10771,6 +10789,7 @@ __metadata:
     "@storybook/react": "npm:^7.5.3"
     "@storybook/react-webpack5": "npm:^7.5.3"
     "@storybook/testing-library": "npm:^0.2.2"
+    "@types/codemirror": "npm:^0.0.76"
     "@types/jest": "npm:^29.5.9"
     "@types/react": "npm:^18.2.38"
     "@typescript-eslint/eslint-plugin": "npm:^6.12.0"

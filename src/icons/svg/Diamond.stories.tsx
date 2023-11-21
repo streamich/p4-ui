@@ -15,8 +15,7 @@ const meta: Meta<typeof Text> = {
 export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
-  args: {
-  },
+  args: {},
   decorators: [
     (Story: any) => (
       <div style={{width: '100px', height: '100px'}}>

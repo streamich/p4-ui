@@ -4416,6 +4416,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@npm:^16.8.2":
+  version: 16.14.52
+  resolution: "@types/react@npm:16.14.52"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: e460bcc7f2e6080ea889c29fc4253a708dade61d52dbdf4d784336530017d7ec2b76029f30eaf591744460472a8e02dbadfc2a6b17c0a41341d44e87aea945b4
+  languageName: node
+  linkType: hard
+
 "@types/scheduler@npm:*":
   version: 0.16.7
   resolution: "@types/scheduler@npm:0.16.7"
@@ -5117,6 +5128,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"are-passive-events-supported@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "are-passive-events-supported@npm:1.1.1"
+  checksum: e50d351ffc980eb13f4aa2d9d6fb59c3ab794adf5e4f6b9a2ad2d53ad38320fd6b27513800ed4213917a7d9af0c96bee71eec4afc556a9367e5b60fb7aed3caa
+  languageName: node
+  linkType: hard
+
 "argparse@npm:^1.0.7":
   version: 1.0.10
   resolution: "argparse@npm:1.0.10"
@@ -5731,6 +5749,22 @@ __metadata:
     get-intrinsic: "npm:^1.2.1"
     set-function-length: "npm:^1.1.1"
   checksum: a6172c168fd6dacf744fcde745099218056bd755c50415b592655dcd6562157ed29f130f56c3f6db2250f67e4bd62e5c218cdc56d7bfd76e0bda50770fce2d10
+  languageName: node
+  linkType: hard
+
+"callbag-subscribe@npm:^1.4.1":
+  version: 1.5.1
+  resolution: "callbag-subscribe@npm:1.5.1"
+  dependencies:
+    callbag: "npm:^1.2.0"
+  checksum: 3a735a3067ccbbbf72cab538574b6f08c28c282e8dd99bf5612e8f5d42c7e16570eae61415da938a542133130e0b30f8bef49c80a26aafe0558a58fc3bb775c9
+  languageName: node
+  linkType: hard
+
+"callbag@npm:^1.2.0":
+  version: 1.5.1
+  resolution: "callbag@npm:1.5.1"
+  checksum: 96e9bda5ffb1c17fab02136714d277f1f22cc47f2d48af308c89dde83aa57c1c8e07a6a9c994bc4182b9cf590bc5fc907358ab424b51702208559fe88b8fe045
   languageName: node
   linkType: hard
 
@@ -8238,6 +8272,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconista@npm:^2.16.1":
+  version: 2.16.1
+  resolution: "iconista@npm:2.16.1"
+  dependencies:
+    react-use: "npm:^5.7.1"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: b11bbb0a010b7335df0d184a6a1075baa655a01c885640169bebb730abca1a2c81a64296cdc01669015f16f7f12b02c5cf105be96988da026c4b11d820f812df
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -9485,6 +9531,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keyboardjs@npm:^2.5.1":
+  version: 2.7.0
+  resolution: "keyboardjs@npm:2.7.0"
+  checksum: 0e9ff96cc22c9f947e1ea1506832aea19ec17591e288ff7b26b8fc7b11e4f2625335e4fafb1c7b8aae219e435147f0676e5f4fca12d1cfc66fc200155db123dc
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.3":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -10076,7 +10129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-css@npm:^5.3.1, nano-css@npm:^5.6.0":
+"nano-css@npm:^5.0.0, nano-css@npm:^5.3.1, nano-css@npm:^5.6.0":
   version: 5.6.0
   resolution: "nano-css@npm:5.6.0"
   dependencies:
@@ -10095,16 +10148,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-theme@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "nano-theme@npm:1.1.2"
+"nano-theme@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "nano-theme@npm:1.1.3"
   dependencies:
     nano-css: "npm:^5.6.0"
     react-use: "npm:^17.4.0"
     thingies: "npm:^1.13.1"
   peerDependencies:
     react: "*"
-  checksum: 94c17664057aa7a40d87e26258aac28c98fa0a2e9f10423d98f734754692d0686b1f4236a482e25fac5d69120d4011c7a81f8f1f64db297f2fc00f1409e83fe3
+  checksum: 3c42dd2d81ffb1610c9126738f787212d458b15e82f54d552ae96242d80d688bde3e6f0cc655bb3c9230abee3db2e82fcbc57808bc6dfc250b212fa1f3685718
   languageName: node
   linkType: hard
 
@@ -10537,17 +10590,20 @@ __metadata:
     eslint: "npm:^8.54.0"
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-storybook: "npm:^0.6.15"
+    iconista: "npm:^2.16.1"
     jest: "npm:^29.7.0"
-    nano-theme: "npm:^1.1.2"
+    nano-theme: "npm:^1.1.3"
     prettier: "npm:^3.1.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-use: "npm:^17.4.0"
     rimraf: "npm:^5.0.5"
     storybook: "npm:^7.5.3"
     thingies: "npm:^1.13.1"
     ts-jest: "npm:^29.1.1"
     tslib: "npm:^2.6.2"
     typescript: "npm:^5.3.2"
+    use-t: "npm:^1.6.2"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -11330,6 +11386,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-use@npm:^5.7.1":
+  version: 5.16.1
+  resolution: "react-use@npm:5.16.1"
+  dependencies:
+    "@types/react": "npm:^16.8.2"
+    keyboardjs: "npm:^2.5.1"
+    nano-css: "npm:^5.0.0"
+    react-wait: "npm:^0.3.0"
+    rebound: "npm:^0.1.0"
+    throttle-debounce: "npm:^2.0.1"
+    ts-easing: "npm:^0.2.0"
+    use-callbag: "npm:^0.2.0"
+    use-onclickoutside: "npm:^0.3.0"
+  peerDependencies:
+    react: ^16.8.0
+    react-dom: ^16.8.0
+  checksum: 622f8619966d6f8c93e3382fbbc079f5f4bef0906f44d607944ba0985993672a49e7851dcf68ec68fd99866d62b933252d769a828ff17a556f889f67a477e779
+  languageName: node
+  linkType: hard
+
+"react-wait@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "react-wait@npm:0.3.0"
+  peerDependencies:
+    react: ">=16.7.0-alpha"
+  checksum: 6d6e3819af953b1718f786ad4ff2d335538f163fc8cb7027e1a122f9ad7ca787e067346113992f089a1e6e63e49894b22768c0afd14e22661708be8bbb83b4df
+  languageName: node
+  linkType: hard
+
 "react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
@@ -11394,6 +11479,13 @@ __metadata:
   dependencies:
     picomatch: "npm:^2.2.1"
   checksum: 6fa848cf63d1b82ab4e985f4cf72bd55b7dcfd8e0a376905804e48c3634b7e749170940ba77b32804d5fe93b3cc521aa95a8d7e7d725f830da6d93f3669ce66b
+  languageName: node
+  linkType: hard
+
+"rebound@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "rebound@npm:0.1.0"
+  checksum: 54515b0e79c4f5d09da32bb686bf72a8fb972eb0dd81f8cfe35eb412b4fcbb45c8928ab86e8d0ff8eecaa12082c06be34cfbfcebd64c7063f359f14895fe5ddd
   languageName: node
   linkType: hard
 
@@ -12591,6 +12683,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"throttle-debounce@npm:^2.0.1":
+  version: 2.3.0
+  resolution: "throttle-debounce@npm:2.3.0"
+  checksum: 41648e4cf46f935818af32ecac34f9876c618f24e300551cbe3a0ca2c5828cb8d2f9b73e6e1e2f8c64237f70fbc8c541f9b5c9114da70b33b1ed10ba4cc6b15f
+  languageName: node
+  linkType: hard
+
 "throttle-debounce@npm:^3.0.1":
   version: 3.0.1
   resolution: "throttle-debounce@npm:3.0.1"
@@ -12608,7 +12707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tiny-invariant@npm:^1.3.1":
+"tiny-invariant@npm:^1.0.4, tiny-invariant@npm:^1.3.1":
   version: 1.3.1
   resolution: "tiny-invariant@npm:1.3.1"
   checksum: 5b87c1d52847d9452b60d0dcb77011b459044e0361ca8253bfe7b43d6288106e12af926adb709a6fc28900e3864349b91dad9a4ac93c39aa15f360b26c2ff4db
@@ -13091,6 +13190,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-callbag@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "use-callbag@npm:0.2.0"
+  dependencies:
+    callbag-subscribe: "npm:^1.4.1"
+  peerDependencies:
+    react: ^16.7.0-alpha.0
+  checksum: abd178b6037bdf15e1c344b81cba5e0fe38b80c0f452139b01f9b7ae844835212380208eaabfec42a1bc1969aa96f3d02bab31610b2730c5f6d6fd56f2c4d703
+  languageName: node
+  linkType: hard
+
+"use-isomorphic-layout-effect@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "use-isomorphic-layout-effect@npm:1.1.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: d8deea8b85e55ac6daba237a889630bfdbf0ebf60e9e22b6a78a78c26fabe6025e04ada7abef1e444e6786227d921e648b2707db8b3564daf757264a148a6e23
+  languageName: node
+  linkType: hard
+
+"use-latest@npm:^1.0.0":
+  version: 1.2.1
+  resolution: "use-latest@npm:1.2.1"
+  dependencies:
+    use-isomorphic-layout-effect: "npm:^1.1.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 1958886fc35262d973f5cd4ce16acd6ce3a66707a72761c93abd1b5ae64e1a11efa83f68e6c8c9bf1647628037980ce59df64cba50adb36bd4071851e70527d2
+  languageName: node
+  linkType: hard
+
+"use-onclickoutside@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "use-onclickoutside@npm:0.3.2"
+  dependencies:
+    are-passive-events-supported: "npm:^1.1.0"
+    use-latest: "npm:^1.0.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+  checksum: acda2a153e4f4263992e4ef81b12f0ff2beedb0345d75ff72f10fc8e34e87d643dd951046108e06393982c49446f7350ed5bb6e9b7e63baef5db6b8bcb80681a
+  languageName: node
+  linkType: hard
+
 "use-resize-observer@npm:^9.1.0":
   version: 9.1.0
   resolution: "use-resize-observer@npm:9.1.0"
@@ -13116,6 +13264,18 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 89f0018fd9aee1fc17c85ac18c4bf8944d460d453d0d0e04ddbc8eaddf3fa591e9c74a1f8a438a1bff368a7a2417fab380bdb3df899d2194c4375b0982736de0
+  languageName: node
+  linkType: hard
+
+"use-t@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "use-t@npm:1.6.2"
+  dependencies:
+    tiny-invariant: "npm:^1.0.4"
+  peerDependencies:
+    react: ^16.8.0
+    react-dom: ^16.8.0
+  checksum: c0fcd34940b06da92e9ed018a072ad36b9c4bf1bb333fe2eb6b6d920a997dacaa84640c4fd68075c912cba629001674002758961d9d850792494c38299932b02
   languageName: node
   linkType: hard
 

@@ -13,7 +13,7 @@ const blockSmallClass = rule({
   fz: '13px',
 });
 
-const useBlockClass = makeRule(theme => ({
+const useBlockClass = makeRule((theme) => ({
   col: theme.g(0.7),
   // [`.${bigItemClass.trim()}:hover &`]: {
   //   col: '#fff',

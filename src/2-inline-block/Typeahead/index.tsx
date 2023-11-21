@@ -84,14 +84,14 @@ export const Typeahead: React.FC<Props> = ({
     if (onInput && ref.current) onInput(ref.current);
   }, [onInput]);
 
-  const dynamicBlockClass = useRule(theme => ({
+  const dynamicBlockClass = useRule((theme) => ({
     input: {
       col: theme.g(0, 0.8),
     },
   }));
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> | undefined = onChange
-    ? e => onChange(e.target.value)
+    ? (e) => onChange(e.target.value)
     : undefined;
 
   const handleKeyDown = (e: React.KeyboardEvent) => {

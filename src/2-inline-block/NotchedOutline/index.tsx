@@ -10,14 +10,14 @@ const blockClass = rule({
   pad: '0 8px 6px',
 });
 
-const useBlockClass = makeRule(theme => ({
+const useBlockClass = makeRule((theme) => ({
   bd: `1px solid ${theme.g(0.7)}`,
   '&:hover': {
     bd: `1px solid ${theme.g(0.5)}`,
   },
 }));
 
-const useBlockActiveClass = makeRule(theme => ({
+const useBlockActiveClass = makeRule((theme) => ({
   mar: 0,
   pad: '0 7px',
   bd: `2px solid ${theme.color.sem.positive[1]}`,
@@ -26,7 +26,7 @@ const useBlockActiveClass = makeRule(theme => ({
   },
 }));
 
-const useBlockDisabledClass = makeRule(theme => ({
+const useBlockDisabledClass = makeRule((theme) => ({
   mar: '0 0 1px',
   pad: '0 8px',
   bd: `1px solid ${theme.g(0.3)}`,
@@ -41,18 +41,18 @@ const legendClass = rule({
   fz: '12px',
 });
 
-const useLegendClass = makeRule(theme => ({
+const useLegendClass = makeRule((theme) => ({
   col: theme.g(0.7),
   'fieldset:hover &': {
     col: theme.g(0.5),
   },
 }));
 
-const useLegendActiveClass = makeRule(theme => ({
+const useLegendActiveClass = makeRule((theme) => ({
   col: theme.g(0.3),
 }));
 
-const useLegendDisabledClass = makeRule(theme => ({
+const useLegendDisabledClass = makeRule((theme) => ({
   col: theme.g(0.6),
 }));
 

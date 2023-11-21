@@ -1,8 +1,8 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {SpinnerCircle as Component} from '.';
+import {Button as Component} from '.';
 
 const meta: Meta<typeof Text> = {
-  title: '2. Inline Block/SpinnerCircle',
+  title: '2. Inline Block/Button',
   component: Component,
   parameters: {
     layout: 'centered',
@@ -14,5 +14,7 @@ const meta: Meta<typeof Text> = {
 export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
-  args: {},
+  args: {
+    children: 'Click me',
+  },
 };

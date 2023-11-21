@@ -10148,16 +10148,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-theme@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "nano-theme@npm:1.1.3"
+"nano-theme@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "nano-theme@npm:1.2.0"
   dependencies:
     nano-css: "npm:^5.6.0"
     react-use: "npm:^17.4.0"
     thingies: "npm:^1.13.1"
   peerDependencies:
     react: "*"
-  checksum: 3c42dd2d81ffb1610c9126738f787212d458b15e82f54d552ae96242d80d688bde3e6f0cc655bb3c9230abee3db2e82fcbc57808bc6dfc250b212fa1f3685718
+  checksum: 259279c38f4c8d4c38c43d1bf726391a3cb3b176898e300dddd4b12239d0925e1af1758937aca5af876c12ef80c57e601c15a9adde67b21be3c0935e9c132d9b
   languageName: node
   linkType: hard
 
@@ -10592,7 +10592,7 @@ __metadata:
     eslint-plugin-storybook: "npm:^0.6.15"
     iconista: "npm:^2.16.1"
     jest: "npm:^29.7.0"
-    nano-theme: "npm:^1.1.3"
+    nano-theme: "npm:^1.2.0"
     prettier: "npm:^3.1.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"

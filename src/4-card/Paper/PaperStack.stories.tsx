@@ -18,17 +18,17 @@ export default meta;
 export const Primary: StoryObj<typeof meta> = {
   args: {
     children: ([
-      <Paper>
+      <Paper key={1}>
         <div style={{padding: 32}}>
           Card 1
         </div>
       </Paper>,
-      <Paper>
+      <Paper key={2}>
         <div style={{padding: 32}}>
           Card 2
         </div>
       </Paper>,
-      <Paper>
+      <Paper key={3}>
         <div style={{padding: 32}}>
           Card 3
         </div>

@@ -16,11 +16,6 @@ export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
   args: {
-    children: (
-      <div style={{padding: 32}}>
-        content ...
-      </div>
-    ),
+    children: <div style={{padding: 32}}>content ...</div>,
   },
 };
-

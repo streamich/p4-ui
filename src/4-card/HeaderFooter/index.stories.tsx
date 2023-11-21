@@ -20,4 +20,3 @@ export const Primary: StoryObj<typeof meta> = {
     footer: 'footer',
   },
 };
-

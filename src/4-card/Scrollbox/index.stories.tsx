@@ -21,11 +21,6 @@ export const Primary: StoryObj<typeof meta> = {
       height: 200,
       background: '#eee',
     },
-    children: (
-      <div style={{padding: 32, width: 144, height: 400}}>
-        scroll me ...
-      </div>
-    ),
+    children: <div style={{padding: 32, width: 144, height: 400}}>scroll me ...</div>,
   },
 };
-

@@ -32,7 +32,7 @@ const itemClass = rule({
   pad: `6px ${padding}px`,
 });
 
-const useItemClass = makeRule(theme => ({
+const useItemClass = makeRule((theme) => ({
   col: theme.g(0.3),
   '&:hover': {
     col: theme.g(0.3),
@@ -46,13 +46,13 @@ const itemClickableClass = rule({
   cur: 'pointer',
 });
 
-const useItemClickableClass = makeRule(theme => ({
+const useItemClickableClass = makeRule((theme) => ({
   '&:hover': {
     bg: theme.isLight ? theme.g(0, 0.04) : theme.g(0, 0.06),
   },
 }));
 
-const useDangerClass = makeRule(theme => ({
+const useDangerClass = makeRule((theme) => ({
   'svg path': {
     fill: theme.red(0.8),
   },
@@ -64,7 +64,7 @@ const useDangerClass = makeRule(theme => ({
   },
 }));
 
-const useItemGrayClass = makeRule(theme => ({
+const useItemGrayClass = makeRule((theme) => ({
   bg: theme.isLight ? theme.g(0.985) : theme.g(0.92),
 }));
 
@@ -81,7 +81,7 @@ export const bigItemClass = rule({
   },
 });
 
-const useBigItemClass = makeRule(theme => ({
+const useBigItemClass = makeRule((theme) => ({
   col: theme.g(0.3),
 }));
 
@@ -108,7 +108,7 @@ const smallTextClass = rule({
   },
 });
 
-const useSmallTextClass = makeRule(theme => ({
+const useSmallTextClass = makeRule((theme) => ({
   p: {
     col: theme.g(0.5),
   },
@@ -118,7 +118,7 @@ const useSmallTextClass = makeRule(theme => ({
   },
 }));
 
-const useSelectedClass = makeRule(theme => ({
+const useSelectedClass = makeRule((theme) => ({
   bg: theme.g(0, 0.04),
 }));
 
@@ -169,7 +169,7 @@ export const ContextItem: React.FC<ContextItemProps> = ({
     (selected ? selectedClass : '');
 
   const onClickWrapped = rest.onClick;
-  rest.onClick = e => {
+  rest.onClick = (e) => {
     if (popup) popup.close();
     if (onClickWrapped) onClickWrapped(e);
   };
@@ -208,7 +208,7 @@ export const ContextItem: React.FC<ContextItemProps> = ({
   });
 
   if (inset) {
-    element = <div style={{padding: `0 4px`}}>{element}</div>;
+    element = <div style={{padding: '0 4px'}}>{element}</div>;
   }
 
   return element;

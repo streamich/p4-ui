@@ -5,14 +5,14 @@ export const blockClass = rule({
   bdrad: '4px',
 });
 
-const useBlockClass = makeRule(theme => ({
+const useBlockClass = makeRule((theme) => ({
   bg: theme.bg,
   'a &': {
     col: theme.g(0.25),
   },
 }));
 
-const useHoverBlockClass = makeRule(theme => ({
+const useHoverBlockClass = makeRule((theme) => ({
   bd: `1px solid ${theme.g(0, 0.1)}`,
   '&:hover': {
     bd: `1px solid ${theme.color.sem.blue[0]}`,
@@ -44,7 +44,7 @@ export interface PaperProps {
   children?: React.ReactNode;
 }
 
-export const Paper: React.FC<PaperProps> = props => {
+export const Paper: React.FC<PaperProps> = (props) => {
   const {as = 'div', level = 0, fill = 0, round, hover, hoverElevate, contrast, noBorder} = props;
   const theme = useTheme();
   const dynamicBlockClass = useBlockClass();

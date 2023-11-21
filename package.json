@@ -18,14 +18,15 @@
     "lint": "yarn eslint",
     "lint:fix": "yarn eslint --fix",
     "eslint": "eslint src",
-    "clean": "rimraf dist lib es6 es2019 es2020 esm typedocs",
+    "clean": "rimraf dist lib es6 es2019 es2020 esm typedocs storybook-static",
     "build": "tsc --project tsconfig.build.json",
     "jest": "jest",
     "test": "yarn jest --maxWorkers 7",
     "test:all": "yarn lint && yarn test",
     "test:ci": "yarn jest --maxWorkers 3 --no-cache",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook:build": "storybook build",
+    "storybook:publish": "npx gh-pages -d storybook-static"
   },
   "keywords": [],
   "dependencies": {

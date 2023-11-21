@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {context} from './context';
 
+export * from './context';
+
 const noop = (() => {}) as any;
 const isModifiedEvent = (event: React.MouseEvent) =>
   !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
@@ -10,12 +12,12 @@ export interface LinkProps extends React.AllHTMLAttributes<any> {
   state?: any | ((props: LinkProps) => any);
   to?: string;
   a?: boolean;
-  component?: string | React.ComponentType<any>;
+  comp?: string | React.ComponentType<any>;
 }
 
 export const Link: React.FC<LinkProps> = React.forwardRef<any, LinkProps>((props, ref) => {
   /* eslint-disable */
-  let {replace, state, to, a, component = a ? 'a' : 'button', onClick: originalClick = noop, target, ...rest} = props;
+  let {replace, state, to, a, comp = a ? 'a' : 'button', onClick: originalClick = noop, target, ...rest} = props;
   /* eslint-disable */
 
   const go = React.useContext(context);
@@ -42,10 +44,10 @@ export const Link: React.FC<LinkProps> = React.forwardRef<any, LinkProps>((props
     onClick,
   };
 
-  if (component === 'a') {
+  if (comp === 'a') {
     attr.href = to;
     attr.target = target;
   }
 
-  return React.createElement(component, attr);
+  return React.createElement(comp, attr);
 });

@@ -2,6 +2,7 @@ import {createElement as h, Suspense, lazy as reactLazy, ReactNode, FC} from 're
 
 const isClient = typeof window === 'object';
 
+// eslint-disable-next-line
 export const lazy = <P extends {}>(
   promiseGenerator: () => Promise<{default: React.ComponentType<P>}>,
   fallbackDefault = null,

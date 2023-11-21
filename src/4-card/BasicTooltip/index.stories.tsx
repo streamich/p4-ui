@@ -17,6 +17,6 @@ export default meta;
 export const Primary: StoryObj<typeof meta> = {
   args: {
     renderTooltip: () => <div style={{padding: 10}}>Hello world</div>,
-    children: 'Hover me!'
+    children: 'Hover me!',
   },
 };

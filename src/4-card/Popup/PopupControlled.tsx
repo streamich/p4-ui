@@ -27,7 +27,7 @@ const popupClass = rule({
   pos: 'absolute',
   top: '100%',
   left: 0,
-  animation: `fadeInScaleOut .15s`,
+  animation: 'fadeInScaleOut .15s',
 });
 
 export interface State {
@@ -41,8 +41,6 @@ export interface PopupControlledProps extends React.HTMLAttributes<any> {
   round?: boolean;
   right?: boolean;
   prerender?: boolean;
-  hover?: boolean;
-  stopPropagation?: boolean;
   noAnimation?: boolean;
   renderContext: (state: State) => React.ReactElement<any>;
   showTooltip?: boolean;
@@ -70,9 +68,7 @@ export const PopupControlled: React.FC<PopupControlledProps> = (props) => {
     tooltipTop,
     tooltipRight,
     renderTooltip,
-    hover,
     block,
-    stopPropagation,
     onHeadClick,
     onClickAway = () => {},
     onEsc,

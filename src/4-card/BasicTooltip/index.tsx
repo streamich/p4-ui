@@ -69,6 +69,7 @@ export const BasicTooltip: React.FC<BasicTooltipProps> = forwardRef(
           if (onMouseLeave) onMouseLeave(e);
           if (renderTooltip) setVisible(false);
         }}
+        ref={ref}
       >
         {children}
         {!!renderTooltip && (typeof show === 'boolean' ? show : !!visible) && (

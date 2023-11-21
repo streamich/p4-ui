@@ -114,7 +114,7 @@ export const CommandPaletteItem: React.FC<CommandPaletteItemProps> = ({
     }
   }, [selected]);
 
-  const selectedBlockClass = useRule(theme => ({
+  const selectedBlockClass = useRule((theme) => ({
     bg: theme.g(0, 0.04),
     '&:hover': {
       bd: `1px solid ${theme.g(0, 0.08)}`,

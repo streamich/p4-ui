@@ -15,7 +15,7 @@ export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
   args: {
-    input: <CommandPaletteInput value={'Typ'} placeholder='Typeahead' onClear={() => {}} />,
+    input: <CommandPaletteInput value={'Typ'} placeholder="Typeahead" onClear={() => {}} />,
     children: (
       <>
         <CommandPaletteItem>Item 1</CommandPaletteItem>

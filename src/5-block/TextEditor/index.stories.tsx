@@ -11,6 +11,5 @@ const meta: Meta<typeof Text> = {
 export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
-  args: {
-  },
+  args: {},
 };

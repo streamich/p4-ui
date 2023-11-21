@@ -73,7 +73,7 @@ export const CommandArgColor: React.FC<Props> = ({
               onTab={onSubmit}
               onTabBack={onTabBack}
               onDeleteBefore={onDeleteBefore}
-              onInput={input => ((inputRef as any).current = input)}
+              onInput={(input) => ((inputRef as any).current = input)}
             />
           </CommandPaletteItem>
           <div style={{padding: '16px 24px 0', display: 'flex', justifyContent: 'center'}}>

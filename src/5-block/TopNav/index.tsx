@@ -21,7 +21,7 @@ const blockClass = rule({
   },
 });
 
-const useBlockClass = makeRule(theme => ({
+const useBlockClass = makeRule((theme) => ({
   bdb: `1px solid ${theme.g(0, 0.08)}`,
   '&:hover': {
     bdb: `1px solid ${theme.g(0, 0.12)}`,
@@ -38,7 +38,7 @@ const sizerClass = rule({
   jc: 'space-between',
 });
 
-const useSizerClass = makeRule(theme => ({
+const useSizerClass = makeRule((theme) => ({
   bdb: `1px solid ${theme.g(0, 0.04)}`,
   '&:hover': {
     bdb: `1px solid ${theme.g(0, 0.08)}`,
@@ -55,7 +55,7 @@ export interface TopNavProps extends React.HTMLAttributes<any> {
   border?: boolean;
 }
 
-export const TopNav: React.FC<TopNavProps> = props => {
+export const TopNav: React.FC<TopNavProps> = (props) => {
   const {children, open, border, ...rest} = props;
   const {width} = useWindowSize();
   const showBorder = useObservable(showBorder$, false);

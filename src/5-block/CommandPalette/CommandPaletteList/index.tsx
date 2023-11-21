@@ -43,10 +43,10 @@ export const CommandPaletteList: React.FC<CommandPaletteListProps> = ({
     <div className={scrollClass}>
       <Scrollbox>
         <Group className={groupClass} separator={<Separator hard style={{margin: '8px 0'}} />}>
-          {list.map(group => (
+          {list.map((group) => (
             <div key={group.id}>
               <CommandPaletteTitle>{group.name}</CommandPaletteTitle>
-              {group.list.map(item => (
+              {group.list.map((item) => (
                 <CommandPaletteCmd
                   key={item.id}
                   {...item}

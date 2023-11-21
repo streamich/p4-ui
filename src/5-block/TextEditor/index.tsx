@@ -79,8 +79,8 @@ export interface Props {
   onBlur?: () => void;
 }
 
-export const TextEditor: React.FC<Props> = props => {
-  const dynamicClass = useRule(theme => ({
+export const TextEditor: React.FC<Props> = (props) => {
+  const dynamicClass = useRule((theme) => ({
     '& .CodeMirror': {
       col: theme.name === 'dark' ? '#ddd' : '000',
     },

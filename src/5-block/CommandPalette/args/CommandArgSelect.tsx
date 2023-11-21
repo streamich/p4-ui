@@ -101,7 +101,7 @@ export const CommandArgSelect: React.FC<Props> = ({
           {!list.length && <EmptyState emoji={' '} title={t('No options')} />}
           {!!list.length && (
             <Scrollbox style={{maxHeight: '400px', overflowY: 'auto'}}>
-              {list.map(item => (
+              {list.map((item) => (
                 <CommandPaletteItem
                   key={item.id}
                   selected={selected === item.id}

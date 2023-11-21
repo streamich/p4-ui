@@ -10596,6 +10596,7 @@ __metadata:
     prettier: "npm:^3.1.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-use: "npm:^17.4.0"
     rimraf: "npm:^5.0.5"
     storybook: "npm:^7.5.3"
     thingies: "npm:^1.13.1"

@@ -8,10 +8,6 @@
   },
   "homepage": "https://github.com/streamich/p4-ui",
   "repository": "streamich/p4-ui",
-  "main": "lib/index.js",
-  "type": "module",
-  "types": "lib/index.d.ts",
-  "typings": "lib/index.d.ts",
   "files": [
     "LICENSE",
     "lib/"
@@ -27,27 +23,45 @@
     "jest": "jest",
     "test": "yarn jest --maxWorkers 7",
     "test:all": "yarn lint && yarn test",
-    "test:ci": "yarn jest --maxWorkers 3 --no-cache"
+    "test:ci": "yarn jest --maxWorkers 3 --no-cache",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
+  "dependencies": {
+    "nano-theme": "^1.1.2",
+    "thingies": "^1.13.1"
+  },
   "peerDependencies": {
     "react": "*",
     "react-dom": "*",
     "tslib": "2"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-webpack5": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
     "@types/jest": "^29.5.9",
     "@types/react": "^18.2.38",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.54.0",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "jest": "^29.7.0",
     "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
+    "storybook": "^7.5.3",
     "ts-jest": "^29.1.1",
     "tslib": "^2.6.2",
     "typescript": "^5.3.2"
@@ -100,5 +114,6 @@
         "path": "git-cz"
       }
     }
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }

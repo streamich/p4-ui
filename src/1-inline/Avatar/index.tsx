@@ -305,7 +305,7 @@ export const Avatar: React.FC<AvatarProps> = (allProps) => {
       );
     }
 
-    if (!!bottomRight) {
+    if (bottomRight) {
       const subAvatarSize = size * 0.6;
       subAvatarElement = (
         <span

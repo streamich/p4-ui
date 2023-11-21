@@ -66,7 +66,7 @@ export const BasicButton: React.FC<BasicButtonProps> = ({
   const {isLight} = theme;
   const bgFactor = isLight ? 1 : 1.1;
 
-  const dynamicBlockClass = useRule(({g, isLight}) => ({
+  const dynamicBlockClass = useRule(({g}) => ({
     col: g(0.2),
     svg: {
       fill: g(0.5),

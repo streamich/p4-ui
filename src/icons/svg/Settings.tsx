@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+// eslint-disable-next-line
 const IconSettings: React.FC<{}> = () => {
   return (
     <svg viewBox="0 0 48 48">

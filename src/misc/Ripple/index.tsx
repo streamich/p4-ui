@@ -26,6 +26,7 @@ export interface RippleProps {
   children: ReactNode;
 }
 
+// eslint-disable-next-line
 export interface IRippleState {}
 
 export class Ripple extends Component<RippleProps, IRippleState> {
@@ -37,7 +38,7 @@ export class Ripple extends Component<RippleProps, IRippleState> {
   el: HTMLElement | null = null;
   elRipple: HTMLDivElement | null = null;
 
-  ref = (originalRef: (el: HTMLDivElement) => {}) => (el: HTMLDivElement) => {
+  ref = (originalRef: (el: HTMLDivElement) => void) => (el: HTMLDivElement) => {
     this.el = el;
     (originalRef || noop)(el);
   };
@@ -46,7 +47,7 @@ export class Ripple extends Component<RippleProps, IRippleState> {
     this.elRipple = el;
   };
 
-  onMouseDown = (originalMouseDown: (ev: MouseEvent) => {}) => (event: MouseEvent) => {
+  onMouseDown = (originalMouseDown: (ev: MouseEvent) => void) => (event: MouseEvent) => {
     if (!this.elRipple || !this.el) return;
     const {left, top} = this.el.getBoundingClientRect();
     const posX = left + window.scrollX;

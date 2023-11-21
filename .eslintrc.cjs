@@ -22,11 +22,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react'],
   rules: {
-    indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     '@typescript-eslint/no-explicit-any': 'off',
     'react/display-name': 'off',
+    indent: 'off',
   },
 };

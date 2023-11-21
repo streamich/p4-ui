@@ -1,11 +1,10 @@
 import * as React from 'react';
 
 export interface IIconSvgGoogleProps {
-  color?: string;
   size?: number;
 }
 
-const IconSvgGoogle: React.FC<IIconSvgGoogleProps> = ({color, size}) => (
+const IconSvgGoogle: React.FC<IIconSvgGoogleProps> = ({size}) => (
   <svg viewBox="0 0 128 128" width={size} height={size}>
     <path
       d="M27.585,64c0-4.157,0.69-8.143,1.923-11.881L7.938,35.648 C3.734,44.183,1.366,53.801,1.366,64c0,10.191,2.366,19.802,6.563,28.332l21.558-16.503C28.266,72.108,27.585,68.137,27.585,64"

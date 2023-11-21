@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const IconSvgClose = ({size = 16}) => (
+const IconSvgClose: React.FC<{size?: number}> = ({size = 16}) => (
   <span
     style={{
       width: size,

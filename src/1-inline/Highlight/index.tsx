@@ -39,7 +39,9 @@ export const Highlight: React.FC<Props> = ({text, query}) => {
       typeof part === 'string' ? (
         preserveSpaces(part)
       ) : (
-        <span key={i} className={highlightClass}>{preserveSpaces(part[0])}</span>
+        <span key={i} className={highlightClass}>
+          {preserveSpaces(part[0])}
+        </span>
       ),
     );
   }, [text, query]);

@@ -24,6 +24,7 @@ jobs:
           cache: yarn
       - run: yarn
       - run: yarn lint
+      - run: yarn prettier:check
       - run: yarn test
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4

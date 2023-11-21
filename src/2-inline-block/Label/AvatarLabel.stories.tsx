@@ -1,8 +1,8 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {InputLine as Component} from '.';
+import {AvatarLabel as Component} from './AvatarLabel';
 
 const meta: Meta<typeof Text> = {
-  title: '2. Inline Block/InputLine',
+  title: '2. Inline Block/Label/AvatarLabel',
   component: Component,
   parameters: {
     layout: 'centered',
@@ -15,6 +15,6 @@ export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
   args: {
-    value: '...',
+    name: 'Mr Name',
   },
 };

@@ -44,7 +44,7 @@ export interface Props {
 }
 
 export const SpinnerBars: React.FC<Props> = ({color}) => {
-  const dynamicBlockClass = useRule(theme => ({
+  const dynamicBlockClass = useRule((theme) => ({
     '&>span': {
       bg: theme.g(0.8),
     },

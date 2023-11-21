@@ -92,13 +92,13 @@ export interface IInputLineState {
   hover?: boolean;
 }
 
-export const InputLine: React.FC<IInputLineProps> = props => {
+export const InputLine: React.FC<IInputLineProps> = (props) => {
   const {disabled, value = '', onPaste, small, label, readOnly, type = 'text', waiting} = props;
   const id = useMemo(() => 'InputLine-' + idCounter++, []);
   const [focus, setFocus] = useState(false);
   const ref = useRef<HTMLInputElement | null>(null);
   const theme = useTheme();
-  const dynamicClass = useRule(theme => ({
+  const dynamicClass = useRule((theme) => ({
     '&>svg': {
       stroke: theme.g(0, 0.15),
     },
@@ -203,7 +203,7 @@ export const InputLine: React.FC<IInputLineProps> = props => {
 
   return (
     <div className={blockClass + dynamicClass}>
-      <input {...inputAttr} onChange={e => (props.onChange || noop)(e.target.value)} />
+      <input {...inputAttr} onChange={(e) => (props.onChange || noop)(e.target.value)} />
       {labelElement}
       {rightIcon}
       <svg {...svgAttr}>

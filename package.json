@@ -30,8 +30,10 @@
   },
   "keywords": [],
   "dependencies": {
+    "codemirror": "5",
     "iconista": "^2.16.1",
     "libreact": "^2.13.3",
+    "load-script": "^2.0.0",
     "nano-theme": "^1.2.0",
     "react-use": "^17.4.0",
     "thingies": "^1.13.1",

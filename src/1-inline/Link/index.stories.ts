@@ -9,12 +9,12 @@ const meta: Meta<typeof Text> = {
   },
   tags: ['autodocs'],
   argTypes: {
-    children: { control: 'text' },
+    children: {control: 'text'},
     a: {
       control: 'boolean',
       description: 'When set, <a> tag is used',
     },
-    to: { control: 'text', description: 'URL to link to' },
+    to: {control: 'text', description: 'URL to link to'},
   },
 };
 

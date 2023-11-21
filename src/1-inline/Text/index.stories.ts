@@ -10,9 +10,9 @@ const meta: Meta<typeof Text> = {
   },
   tags: ['autodocs'],
   argTypes: {
-    children: { control: 'text' },
-    as: { control: 'select', options: ['p', 'span', 'div'] },
-    nowrap: { control: 'boolean' },
+    children: {control: 'text'},
+    as: {control: 'select', options: ['p', 'span', 'div']},
+    nowrap: {control: 'boolean'},
   },
 };
 

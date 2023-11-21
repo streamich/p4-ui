@@ -117,7 +117,7 @@ export interface AvatarProps extends React.AllHTMLAttributes<any> {
   letters?: number;
 }
 
-export const Avatar: React.FC<AvatarProps> = allProps => {
+export const Avatar: React.FC<AvatarProps> = (allProps) => {
   const {
     id,
     href,

@@ -8,15 +8,13 @@ const meta: Meta<typeof Text> = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-    
-  },
+  argTypes: {},
 };
 
 export default meta;
 
 export const Primary: StoryObj<typeof meta> = {
   args: {
-    children: 'console.log(123)'
+    children: 'console.log(123)',
   },
 };

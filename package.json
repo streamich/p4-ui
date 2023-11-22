@@ -30,7 +30,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "codemirror": "5",
+    "codemirror": "6",
     "iconista": "^2.16.1",
     "libreact": "^2.13.3",
     "load-script": "^2.0.0",

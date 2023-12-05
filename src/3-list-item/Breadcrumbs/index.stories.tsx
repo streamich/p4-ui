@@ -15,10 +15,10 @@ export default meta;
 export const Primary: StoryObj<typeof meta> = {
   args: {
     crumbs: [
-      <Breadcrumb>Home</Breadcrumb>,
-      <Breadcrumb>Products</Breadcrumb>,
-      <Breadcrumb>Category</Breadcrumb>,
-      <Breadcrumb>Product</Breadcrumb>,
+      <Breadcrumb key={1}>Home</Breadcrumb>,
+      <Breadcrumb key={2}>Products</Breadcrumb>,
+      <Breadcrumb key={3}>Category</Breadcrumb>,
+      <Breadcrumb key={4}>Product</Breadcrumb>,
     ],
   },
 };

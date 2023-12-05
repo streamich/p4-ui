@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {rule, theme, makeRule} from 'nano-theme';
+import {Link} from 'react-router-lite';
 
 const blockClass = rule({
   // ...theme.font.alt,
@@ -14,7 +15,7 @@ const blockClass = rule({
   },
 });
 
-const useBlockNoHoverClass = makeRule(theme => ({
+const useBlockNoHoverClass = makeRule((theme) => ({
   ...theme.font.ui2.bold,
   col: theme.g(0.5),
   '&:hover': {
@@ -24,13 +25,22 @@ const useBlockNoHoverClass = makeRule(theme => ({
 }));
 
 export interface BreadcrumbProps {
+  to?: string;
   noHover?: boolean;
   children: React.ReactNode;
 }
 
-export const Breadcrumb: React.FC<BreadcrumbProps> = ({noHover, children}) => {
+export const Breadcrumb: React.FC<BreadcrumbProps> = ({to, noHover, children}) => {
   const blockNoHoverClass = useBlockNoHoverClass();
   const className = blockClass + (noHover ? blockNoHoverClass : '');
+
+  if (to) {
+    return (
+      <Link a to={to} className={className}>
+        {children}
+      </Link>
+    );
+  }
 
   return <span className={className}>{children}</span>;
 };
